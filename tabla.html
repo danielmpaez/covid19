@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Mi Web con HTML5</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>The Materialize Example</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+    <link rel = "stylesheet"
+       href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+       href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+       src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+
+<style>
+    body{
+      background-color: beige;
+      border: solid 5px red;
+      height: 1500 px;
+      text-align: center;
+
+    }
+    header{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 50px;
+        background: #2E64FE;
+     }
+    h1 {
+    margin: 20px ;
+    }
+    button{
+      width: 120px;
+      height: 200px;
+      background-color: green;
+      color: hotpink;
+    }
+    button onclick{
+      background-color: yellow;
+    }
+    select{
+      width: 200px;
+      height: 100px;
+      font-size: x-large;
+    }
+    strong{
+      color:blanchedalmond;
+    }
+    title:{
+      background-color: chartreuse;
+      color: darkgray;
+    }
+    .alert{
+      background-color: indigo;
+      width: 250px;
+
+    }
+</style><script>
+    function showToast(message, duration) {
+       Materialize.toast(message, duration);
+    }
+    
+    function showToast1(message, duration) {
+       Materialize.toast('<i>'+ message + '</i>', duration);
+    }
+    
+    function showToast2(message, duration) {
+       Materialize.toast(message, duration, 'rounded');
+    }
+    
+    function showToast3(message, duration) {
+       Materialize.toast('Hello World!', duration, '', function toastCompleted() {
+          alert('Toast dismissed!');
+       });
+    }
+ </script>
+
+
+</head>
+<body>
+    <div class = "preloader-wrapper big active">
+        <div class = "spinner-layer spinner-blue-only">
+           <div class = "circle-clipper left">
+              <div class = "circle"></div>
+           </div>
+           
+           <div class = "gap-patch">
+              <div class = "circle"></div>
+           </div>
+           
+           <div class = "circle-clipper right">
+              <div class = "circle"></div>
+           </div>
+        </div>
+     </div>
+
+    
+    
+
+     <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo center">TRABAJO EN PYTHON, MONGODB, FLASK, MATERIALIZE.</a>
+                  <ul id = "nav-mobile" class = "right hide-on-med-and-down">                    
+                     <li><a href = "#">YOUTUBE</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      
+      <div class = "row" style = "width:560px;">
+         <div class = "col s12 m12 l12">
+            <h5>INFORME COVID-19</h5>
+            <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo right">COVID-19</a>
+                  <ul id = "nav-mobile" class = "left hide-on-med-and-down">
+                    <li><a href = "index">INICIO</a></li>
+                    <li><a href = "dashboard">DASHBOARD</a></li>
+                    <li class = "active"><a href = "tabla">GRAFICO</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+    </nav>
+
+    
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+<!--
+      <div class = "row" style = "width:560px;">
+         <div class = "col s12 m12 l12">
+            <h5>Nav Bar with dropdown menu</h5>
+            <ul id = "javaDropDown" class = "dropdown-content">
+               <li><a href = "#!">JSF</a></li>
+               <li><a href = "#!">JSP</a></li>
+               <li class = "divider"></li>
+               <li><a href = "#!">Servlets</a></li>
+            </ul>
+            
+            <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo center">TutorialsPoint</a>
+                  <ul id = "nav-mobile" class = "right hide-on-med-and-down">                    
+                    
+                     <li><a class = "dropdown-button" href = "#!" 
+                        data-activates = "javaDropDown">Java<i class = "material-icons
+                        right">arrow_drop_down</i></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      
+      <div class = "row" style = "width:560px;">
+         <div class = "col s12 m12 l12">
+            <h5>Nav Bar with Links and Icons</h5>
+            <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo right">TutorialsPoint</a>
+                  <ul id = "nav-mobile" class = "left hide-on-med-and-down">
+                     <li><a href = "#"><i class = "material-icons left">search</i>
+                        HTML5</a></li>
+                     <li><a href = "#"><i class = "material-icons right">view_module</i>
+                        CSS</a></li>
+                     <li><a href = "#">JavaScript</a></li>
+                  </ul>
+               </div>  -->
+            </nav>
+ 
+            <br>
+            <br>
+          
+<h2>
+    "TABLA DE CASOS EN EL MUNDO"
+</h2>
+
+
+ <div class = "card-panel teal lighten-2"><h3>Hello World!</h3></div>
+
+<table>
+    <!-- Cabecera -->
+    <tr>
+      <th>Título columna 1</th>
+      <!-- Celda de cabecera de la columna 1 -->
+      <th>Título columna 2</th>
+      <!-- Celda de cabecera de la columna 2 -->
+      <th>Título columna 3</th>
+      <!-- Celda de cabecera de la columna 3 -->
+    </tr>
+    <!-- Primera fila -->
+    <tr>
+      <td>Celda 1x1</td>
+      <!-- Primera celda de la primera fila -->
+      <td>Celda 2x1</td>
+      <!-- Segunda celda de la primera fila -->
+      <td>Celda 3x1</td>
+      <!-- Tercera celda de la primera fila -->
+    </tr>
+    <!-- Segunda fila -->
+    <tr>
+      <td>Celda 1x2</td>
+      <!-- Primera celda de la segunda fila -->
+      <td>Celda 2x2</td>
+      <!-- Segunda celda de la segunda fila -->
+      <td>Celda 3x2</td>
+      <!-- Tercera celda de la segunda fila -->
+    </tr>
+  </table>
+
+  <br>
+  <br>
+  <br> 
+
+
+  <div class = "col s12 m6">
+            <div class = "card blue-grey lighten-4">
+               <div class = "card-image">
+                  <img src = "virus.png">                
+               </div>
+               
+               <div class = "card-content">                  
+                  <p>HTML5 is the next major revision of the HTML standard superseding
+                     HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for
+                     structuring and presenting content on the World Wide Web.</p>
+               </div>
+               
+               <div class = "card-action">
+                  <button class = "btn waves-effect waves-light blue-grey">
+                     <i class = "material-icons">share</i></button>
+                  <a class = "right blue-grey-text" href = "http://www.tutorialspoint.com">
+                     www.tutorialspoint.com</a>
+               </div>
+            </div>
+  <br>
+  <br>
+  <br> 
+  <form name="fomul"> 
+    Valoración sobre este web: 
+    <select name="miSelect"> 
+    <option value="10">Muy bien 
+    <option value="5" selected>Regular 
+    <option value="0">Muy mal 
+    </select> 
+    <br> 
+    <br> 
+    <input type=button value="Dime propiedades" onclick="dimePropiedades()"> 
+    </form>
+
+    <h4>Toasts</h4>
+      <a class = "btn" onclick = "showToast('Hello World!', 3000)">Normal Alert!</a>
+      <a class = "btn" onclick = "showToast1('Hello World!', 3000)">Italic Alert!</a>
+      <a class = "btn" onclick = "showToast2('Hello World!', 3000)">Rounded Alert!</a>
+      <br/><br/>
+      <a class = "btn" onclick = "showToast3('Hello World!', 3000)">Callback Alert!</a>	  
+      
+      <h4>Tooltips</h4>
+      <a class = "btn tooltipped" data-position = "bottom" data-delay = "50"
+         data-tooltip = "I am in bottom!">Bottom</a>
+      <a class = "btn tooltipped" data-position = "left" data-delay = "50"
+         data-tooltip = "I am in left!">Left</a>
+      <a class = "btn tooltipped" data-position = "right" data-delay = "50"
+         data-tooltip = "I am in right!">Right</a>
+      <a class = "btn tooltipped" data-position = "top" data-delay = "50"
+         data-tooltip = "I am in top!">Top</a>
+</body>
+
+<footer>
+
+    <center>
+        <FORM method=GET action="http://www.google.com/search">
+        <TABLE bgcolor="silver"><tr><td>
+        <A HREF="http://www.google.com/">
+        <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A>
+        <INPUT TYPE=text name=q size=31 maxlength=255 value="">
+        <INPUT TYPE=hidden name=hl value=es>
+        <INPUT type=submit name=btnG VALUE="Búsqueda Google">
+        </td></tr></TABLE>
+        </FORM>
+        </center>
+</footer>
+</html>

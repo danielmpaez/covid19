@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Mi Web con HTML5</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+    <link rel = "stylesheet"
+       href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+       href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+       src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+
+<style>
+    body{
+      background-color: beige;
+      border: solid 5px red;
+      height: 1500 px;
+      text-align: center;
+
+    }
+    header{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 50px;
+        background: #2E64FE;
+     }
+    h1 {
+    margin: 20px ;
+    }
+    button{
+      width: 120px;
+      height: 200px;
+      background-color: green;
+      color: hotpink;
+    }
+    button onclick{
+      background-color: yellow;
+    }
+    select{
+      width: 150px;
+      height: 35px;
+      font-size: x-large;
+    }
+    strong{
+      color:blanchedalmond;
+    }
+    title:{
+      background-color: chartreuse;
+      color: darkgray;
+    }
+    .alert{
+      background-color: indigo;
+      width: 250px;
+
+    }
+    li{
+        position:relative;
+        font-size: 30px;
+        color: green;
+    }
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class = "nav-wrapper">
+           <a href = "#" class = "brand-logo center">TRABAJO EN PYTHON, MONGODB, FLASK, MATERIALIZE.</a>
+           <ul id = "nav-mobile" class = "right hide-on-med-and-down">                    
+              <li><a href = "#">YOUTUBE</a></li>
+           </ul>
+        </div>
+     </nav>
+  </div>
+</div>
+
+<div class = "row" style = "width:560px;">
+  <div class = "col s12 m12 l12">
+     <h5>INFORME COVID-19</h5>
+     <nav>
+        <div class = "nav-wrapper">
+           <a href = "#" class = "brand-logo right">COVID-19</a>
+           <ul id = "nav-mobile" class = "left hide-on-med-and-down">
+              <li><a href = "index">INICIO</a></li>
+              <li><a href = "dashboard">DASHBOARD</a></li>
+              <li class = "active"><a href = "tabla">GRAFICO</a></li>
+           </ul>
+        </div>
+     </nav>
+  </div>
+</div>
+</nav>
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#basics" aria-controls="basics" role="tab" data-toggle="tab">CASOS TOTALES</a></li>
+    <li role="presentation"><a href="#wdev" aria-controls="wdev" role="tab" data-toggle="tab">CASOS ARGENTINA</a></li>
+    <li role="presentation"><a href="#dan" aria-controls="dan" role="tab" data-toggle="tab">FALLECIMIENTOS ARGENTINA</a></li>
+
+  </ul>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <br> 
+  <!-- Tab panes -->
+  <form name="fomul"> 
+    Valoración sobre este web: 
+    <select name="miSelect"> 
+    <option value="10">Muy bien 
+    <option value="5" selected>Regular 
+    <option value="0">Muy mal 
+    </select> 
+    <br> 
+    <br> 
+    <input type=button value="Dime propiedades" onclick="dimePropiedades()"> 
+    </form>
+
+</div>
+
+</body>
+</html>
